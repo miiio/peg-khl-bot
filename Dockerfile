@@ -1,9 +1,9 @@
 FROM python:3.6.8
 
-RUN mkdir /app \
-&&apt-get update \
-&&apt-get -y install freetds-dev \
-&&apt-get -y install unixodbc-dev
+RUN mkdir /app
+# &&apt-get update \
+# &&apt-get -y install freetds-dev \
+# &&apt-get -y install unixodbc-dev
 WORKDIR /app
 COPY bot.py bot.py
 COPY aram.py aram.py
