@@ -8,6 +8,7 @@ WORKDIR /app
 COPY bot.py bot.py
 COPY dld.py dld.py
 COPY hero_list.json hero_list.json
+COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt -i https://pypi.douban.com/simple
 
 CMD [ "python", "bot.py"]
