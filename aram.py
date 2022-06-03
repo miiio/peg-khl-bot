@@ -1,7 +1,7 @@
 import json
 import random
 
-class DLD():
+class ARAM():
     def __init__(self, players, admin):
         with open('./hero_list.json', 'r', encoding='utf-8') as f:
             self.config = json.load(f)
