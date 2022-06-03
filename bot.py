@@ -22,7 +22,7 @@ async def help(msg: Message):
     card_help = Card(
         Module.Header('划水娱乐群Bot-命令手册'), 
         Module.Divider(),
-        Module.Section(Struct.Paragraph(2, Element.Text("**当前版本**\nV0.0.1", type="kmarkdown"), Element.Text("**全部命令**\n     -", type="kmarkdown"))),
+        Module.Section(Struct.Paragraph(3, Element.Text("**当前版本**\nV0.0.1", type="kmarkdown"), Element.Text("**全部命令**\n     -", type="kmarkdown"), Element.Text("**Github**\n[peg-khl-bot](https://github.com/miiio/peg-khl-bot)", type="kmarkdown"))),
         Module.Divider(),
         Module.Section('指令说明'),
         Module.Section(Element.Text("`/dld-init <@用户>` 初始化参与的玩家\n`/dld-rr <重随次数>` 设置每位玩家每回合重随次数\n`/dld-go <英雄数量> <是否允许重复0/1>` 开始生成随机英雄", type="kmarkdown")),
